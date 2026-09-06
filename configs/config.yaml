@@ -1,28 +1,25 @@
 # Configs for the input paths and parameters
 Path of Input:
-  Super Reference: /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_003_075_A_156_2005_DHDH_A_20251022T104142_20251022T104217_X05009_N_F_J_001.h5
+  Super Reference: /path/to/super_reference
   Secondary List:
-  - /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_004_075_A_156_2005_DHDH_A_20251103T104142_20251103T104217_X05009_N_F_J_001.h5
-  - /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_005_075_A_156_2005_DHDH_A_20251115T104143_20251115T104218_X05009_N_F_J_001.h5
-  - /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_008_075_A_156_2005_DHDH_A_20251221T104144_20251221T104219_X05009_N_F_J_001.h5
-  - /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_009_075_A_156_2005_DHDH_A_20260102T104145_20260102T104220_X05009_N_F_J_001.h5
-  - /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/rslc/NISAR_L1_PR_RSLC_010_075_A_156_2005_DHDH_A_20260114T104145_20260114T104220_X05009_N_F_J_001.h5
-
-  DEM TIFF File: /sar1/kunyichen/NISAR_Ion_Shift/Southern_Argentina/Track75_Frame156/dem/merged_srtm_dem.tif
+  - /path/to/secondary1
+  - /path/to/secondary2
+  - /path/to/secondary3
+  DEM TIFF File: /path/to/dem.tif
 
 Path of Output:
-  Output Dict: /sar1/kunyichen/TS4NISAR/TS4NISAR-main/NISAR_Data_test2
+  Output Dict: /path/to/output_dict/
 
 Selected Frequency and Polarization:
   Freq: A
   Pol: HH
 
 Path of Python Interpreter:
-  isce2: /home/kunyichen/anaconda3/envs/isce2/bin/python
-  isce3: /home/kunyichen/anaconda3/envs/isce3/bin/python
+  isce2: /path/to/isce2/bin/python
+  isce3: /path/to/isce3/bin/python
 
 Path of NISAR Workflow Software:
-  NISARAPP: /sar1/kunyichen/TS4NISAR/TS4NISAR-main/NISARAPP
+  NISARAPP: /path/to/NISARAPP/
 
 # Number of parallel processes to run. Default is 8.
 NumParallels: 8
@@ -30,11 +27,11 @@ NumParallels: 8
 # Options: 'coarse' or 'fine'.
 Coregistration: fine
 
-Number of subsequent dates: 6
+Number of subsequent dates: 2
 
 Multilook Parameters:
-  InSAR Range Looks: 40
-  InSAR Azimuth Looks: 50
+  InSAR Range Looks: 4
+  InSAR Azimuth Looks: 5
   Ion Range Looks: 40
   Ion Azimuth Looks: 50
 
