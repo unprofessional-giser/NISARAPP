@@ -70,3 +70,24 @@ Edit the following files as needed:
 ### 2. Generate processing commands
 
 Run the following command to generate shell scripts:
+```bash
+path_of_PythonToISCE3 path_of_NISARAPP.py \
+
+-config path_to_config.yaml \
+
+-insar path_to_insar.yaml
+
+```
+
+This will create a `cmds/` folder under the output directory defined in `config.yaml`, containing a series of shell scripts (`cmd1_Preprocessing.sh`, `cmd2_Interferometry.sh`, …).
+
+### 3. Execute processing steps
+
+Run the generated shell scripts sequentially:
+```bash
+cd path/to/cmds
+./cmd1_Preprocessing.sh
+./cmd2_Interferometry.sh
+......
+
+```
