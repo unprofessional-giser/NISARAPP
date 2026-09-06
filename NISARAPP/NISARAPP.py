@@ -18,7 +18,7 @@ def cmdLineParse():
     parser = argparse.ArgumentParser(description='Time Series InSAR Processing for NISAR')
     parser.add_argument('-config', dest='config', type=str, required=True,
             help = 'config yaml containing the input paths and parameters')
-    parser.add_argument('-insar', dest='insar', type=str, required=True,
+    parser.add_argument('-insar', dest='insar', type=str, required=False,
             help = 'insar yaml, i.e., NISAR DINSAR config file for ISCE3')
 
     if len(sys.argv) <= 1:
