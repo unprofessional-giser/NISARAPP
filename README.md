@@ -1,4 +1,4 @@
-# NISARAPP
+# NISARAPP (v0.1.0-alpha)
 Time-series analysis extension for NISAR LSAR Data
 
 NISARAPP is a Python-based time-series analysis extension package for **NISAR LSAR data**.  
