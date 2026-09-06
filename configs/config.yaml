@@ -1,10 +1,10 @@
 # Configs for the input paths and parameters
 Path of Input:
-  Super Reference: /path/to/super_reference
+  Super Reference: /path/to/super_reference_rslc.h5
   Secondary List:
-  - /path/to/secondary1
-  - /path/to/secondary2
-  - /path/to/secondary3
+  - /path/to/secondary1_rslc.h5
+  - /path/to/secondary2_rslc.h5
+  - /path/to/secondary3_rslc.h5
   DEM TIFF File: /path/to/dem.tif
 
 Path of Output:
