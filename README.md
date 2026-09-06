@@ -109,6 +109,29 @@ The final outputs include:
 - Time-series displacement
 - Linear velocity
 
+### 5. Geocoding
+
+To geocode the time-series results (e.g., velocity map), use `Geocode.py`.
+```bash
+path_to_PythonToISCE2 path_to_Geocode.py -h
+```
+**Example:**
+```bash
+/home/kunyichen/anaconda3/envs/isce2/bin/python \
+
+/sar1/kunyichen/TS4NISAR/TS4NISAR-main/NISARAPP/Geocode.py \
+
+-config /sar1/kunyichen/TS4NISAR/TS4NISAR-main/NISAR_Data_test2/configs/config.yaml \
+
+-input /sar1/kunyichen/TS4NISAR/TS4NISAR-main/NISAR_Data_test2/ts/velocity.unw \
+
+-fill_value 0
+
+```
+The output will be `velocity.unw.geo` in the same directory.
+
+**View required parameters:**
+
 > **Note:**  
 > The current SBAS implementation uses **unweighted least squares**.  
 > Coherence-weighted least squares will be supported in a future version.
