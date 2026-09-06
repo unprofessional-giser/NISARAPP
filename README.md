@@ -135,6 +135,12 @@ path_to_PythonToISCE2 path_to_Geocode.py -h
 ```
 The output will be `velocity.unw.geo` in the same directory.
 
+## Results
+**Examples: Left: Time-series velocity in SAR coordinates. Right: Time-series velocity after geocoding.**
+
+<img src="docs/vel.png" height="300px" style="display:inline-block; margin-right:10px;" /> <img src="docs/vel.geo.png" height="300px" style="display:inline-block;" />
+
+
 ---
 
 ## Notes
