@@ -109,9 +109,14 @@ The final outputs include:
 - Time-series displacement
 - Linear velocity
 
+> **Note:**  
+> The current SBAS implementation uses **unweighted least squares**.  
+> Coherence-weighted least squares will be supported in a future version.
+
 ### 5. Geocoding
 
 To geocode the time-series results (e.g., velocity map), use `Geocode.py`.
+**View required parameters:**
 ```bash
 path_to_PythonToISCE2 path_to_Geocode.py -h
 ```
@@ -129,12 +134,6 @@ path_to_PythonToISCE2 path_to_Geocode.py -h
 
 ```
 The output will be `velocity.unw.geo` in the same directory.
-
-**View required parameters:**
-
-> **Note:**  
-> The current SBAS implementation uses **unweighted least squares**.  
-> Coherence-weighted least squares will be supported in a future version.
 
 ---
 
