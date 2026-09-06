@@ -91,3 +91,46 @@ cd path/to/cmds
 ......
 
 ```
+
+> **Important:**  
+> For ionospheric correction, inspect the preliminary correction results before proceeding to subsequent steps. The workflow follows the ALOS2Stack procedure.
+
+### 4. SBAS time-series processing
+
+After running `cmdx_SBAS.sh`, a `./ts` folder will be created in the output directory.  
+It contains:
+
+- A list of interferometric pairs used in SBAS
+- A shell script for time-series estimation
+
+Run the script inside `./ts` to perform SBAS processing.  
+The final outputs include:
+
+- Time-series displacement
+- Linear velocity
+
+> **Note:**  
+> The current SBAS implementation uses **unweighted least squares**.  
+> Coherence-weighted least squares will be supported in a future version.
+
+---
+
+## Notes
+
+- Default parameters are used in the standard processing flow and may not be optimal for all datasets.
+- Each processing step can be customized by modifying the corresponding Python script inputs.
+- Filtering and frame mosaicking functionalities are under development and will be included in a later release.
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+(see [LICENSE](LICENSE) for details)
+
+---
+
+## Contact
+
+For questions or feedback, please contact:  
+**<Kunyi Chen (陈坤一)/ cky2366531304@stu.pku.edu.cn>**
