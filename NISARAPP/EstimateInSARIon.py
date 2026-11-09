@@ -432,7 +432,7 @@ if __name__ == '__main__':
                     f"geo2rdr/freq{freq}/range.off"
                 )
             else:
-                sed_subband_slc_fp = os.path.join('dates',ref,f'ionosphere/{subband}/crossmul/freq{freq}/{pol}/secondary.slc')
+                sed_subband_slc_fp = os.path.join('dates',ref,f'ionosphere/{subband}/crossmul/freq{freq}/{pol}/reference.slc')
                 sed_range_off_fp = None
 
             # ---- outputs ----
