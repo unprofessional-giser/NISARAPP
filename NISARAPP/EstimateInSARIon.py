@@ -489,10 +489,10 @@ if __name__ == '__main__':
     print(f"Total pairs: {len(tasks)}")
     print(f"Using {num_workers} workers")
 
-    # with Pool(processes=num_workers) as pool:
-    #     results = pool.map(process_pair, tasks)
-    # for pair, status, msg in results:
-    #     print(f"Generate subband data for {pair}: {status} {msg}")
+    with Pool(processes=num_workers) as pool:
+        results = pool.map(process_pair, tasks)
+    for pair, status, msg in results:
+        print(f"Generate subband data for {pair}: {status} {msg}")
 
     def build_ion_tasks(pairs, 
                     InSARRangeLooks, InSARAzimuthLooks,
