@@ -512,7 +512,7 @@ if __name__ == '__main__':
                 sed_slc_fp = os.path.join(
                     "dates", ref,
                     f"crossmul/freq{freq}/{pol}",
-                    "secondary.slc"
+                    "reference.slc"
                 )
                 sed_range_off_fp = None
 
