@@ -122,7 +122,7 @@ if __name__ == '__main__':
             'InSARAzimuthLooks': InSARAzimuthLooks,
             'coregistration': config['Coregistration'].lower(),
             'pair': pair,
-            'IonRefDate': ref_date
+            'IonRefDate': dates[0]
         }
         tasks.append(task)
     num_workers = min(n*4, os.cpu_count())
